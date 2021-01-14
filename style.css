@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+*{margin:0; padding:0; box-sizing:border-box;}
+html,body{
+  height:100%; 
+  /* The old syntax*/
+  background: linear-gradient(left, #E7E7E7, white,#E7E7E7);
+  /* The new syntax*/
+  background: linear-gradient(to right, #E7E7E7, white,#E7E7E7);
+  width: 100%;
+}
+.container{
+  width:100%;
+  height:100%;
+}
+
+.wrapper{
+  width:270px;
+  margin:50px auto;
+  position:Relative;
+}
+
+/*Projects */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: skyblue;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* padding between each column */
+  .row,
+  .row > .column {
+    padding: 20px;
+  }
+  
+  /* four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: grey;
+    padding: 20px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .strokeme
+  {
+	  color: aliceblue;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+  }
+
+/*Buttons*/
+html, body {
+  height: 100%;
+  width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: skyblue;
+}
+
+.transparent{
+  background-color: rgba(100, 100, 100, 0);
+}
+
+.boxPadding {
+  padding: 20px;
+  text-decoration: none;
+}
+
+.box {
+	background: linear-gradient(to right, gold, darkorange);
+	color: white;
+	--width: 250px;
+	--height: calc(var(--width) / 3);
+	width: var(--width);
+	height: var(--height);
+	text-align: center;
+	line-height: var(--height);
+  	font-family: sans-serif;
+	letter-spacing: 0.2em;
+	border: 1px solid darkgoldenrod;
+	border-radius: 2em;
+	transform: perspective(500px) rotateY(-15deg);
+	box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+	position: relative;
+	  overflow: hidden;
+	  text-decoration: none;
+}
+
+.box:hover {
+	transform: perspective(500px) rotateY(15deg);
+	text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.box::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, transparent, white, transparent);
+	left: -100%;
+	transition: 0.5s;
+}
+
+.box:hover::before {
+	left: 100%;
+}
+.box2 {
+	background: linear-gradient(to right, white, silver);
+	color: black;
+	--width: 250px;
+	--height: calc(var(--width) / 3);
+	width: var(--width);
+	height: var(--height);
+	text-align: center;
+	line-height: var(--height);
+  font-family: sans-serif;
+	letter-spacing: 0.2em;
+	border: 1px solid grey;
+	border-radius: 2em;
+	transform: perspective(500px) rotateY(-15deg);
+	text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+	position: relative;
+  overflow: hidden;
+}
+
+.box2:hover {
+	transform: perspective(500px) rotateY(15deg);
+	text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.box2::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, transparent, white, transparent);
+	left: -100%;
+	transition: 0.5s;
+}
+
+.box2:hover::before {
+	left: 100%;
+}
+.box3 {
+	background: linear-gradient(to right, pink, purple);
+	color: white;
+	--width: 250px;
+	--height: calc(var(--width) / 3);
+	width: var(--width);
+	height: var(--height);
+	text-align: center;
+	line-height: var(--height);
+  font-family: sans-serif;
+	letter-spacing: 0.2em;
+	border: 1px solid red;
+	border-radius: 2em;
+	transform: perspective(500px) rotateY(-15deg);
+	text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+	position: relative;
+  overflow: hidden;
+}
+
+.box3:hover {
+	transform: perspective(500px) rotateY(15deg);
+	text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.box3::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, transparent, white, transparent);
+	left: -100%;
+	transition: 0.5s;
+}
+
+.box3:hover::before {
+	left: 100%;
+}
