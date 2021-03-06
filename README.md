@@ -1,3 +1,3 @@
 # PersonalWebsite
-WIP. Design portfolio website.
+UI/UX & Web Design portfolio website.
 https://angellmei.github.io/PersonalWebsite/
